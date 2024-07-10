@@ -1,0 +1,47 @@
+[2024-07-10T04:05:25.572+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-10T04:05:25.598+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_pipeline.dbt_run_with_snowflake manual__2024-07-10T04:05:24.228173+00:00 [queued]>
+[2024-07-10T04:05:25.605+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_pipeline.dbt_run_with_snowflake manual__2024-07-10T04:05:24.228173+00:00 [queued]>
+[2024-07-10T04:05:25.605+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-10T04:05:25.617+0000] {taskinstance.py:2330} INFO - Executing <Task(DockerOperator): dbt_run_with_snowflake> on 2024-07-10 04:05:24.228173+00:00
+[2024-07-10T04:05:25.622+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'etl_pipeline', 'dbt_run_with_snowflake', 'manual__2024-07-10T04:05:24.228173+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmpzqk7tb2j']
+[2024-07-10T04:05:25.624+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask dbt_run_with_snowflake
+[2024-07-10T04:05:25.625+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=179) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-10T04:05:25.625+0000] {standard_task_runner.py:63} INFO - Started process 181 to run task
+[2024-07-10T04:05:25.658+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_pipeline.dbt_run_with_snowflake manual__2024-07-10T04:05:24.228173+00:00 [running]> on host f0c32192715b
+[2024-07-10T04:05:25.722+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='etl_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run_with_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2024-07-10T04:05:24.228173+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-10T04:05:24.228173+00:00'
+[2024-07-10T04:05:25.723+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-10T04:05:25.755+0000] {docker.py:366} INFO - Starting docker container from image ghcr.io/dbt-labs/dbt-snowflake:latest
+[2024-07-10T04:05:25.757+0000] {docker.py:374} WARNING - Using remote engine or docker-in-docker and mounting temporary volume from host is not supported. Falling back to `mount_tmp_dir=False` mode. You can set `mount_tmp_dir` parameter to False to disable mounting and remove the warning
+[2024-07-10T04:05:27.730+0000] {docker.py:436} INFO - [0m04:05:27  Running with dbt=1.8.2
+[2024-07-10T04:05:28.053+0000] {docker.py:436} INFO - [0m04:05:28  Registered adapter: snowflake=1.8.3
+[2024-07-10T04:05:28.248+0000] {docker.py:436} INFO - [0m04:05:28  Found 8 models, 8 sources, 444 macros
+[2024-07-10T04:05:28.250+0000] {docker.py:436} INFO - [0m04:05:28
+[2024-07-10T04:05:29.362+0000] {docker.py:436} INFO - [0m04:05:29  Concurrency: 1 threads (target='dev')
+[2024-07-10T04:05:29.362+0000] {docker.py:436} INFO - [0m04:05:29
+[2024-07-10T04:05:29.370+0000] {docker.py:436} INFO - [0m04:05:29  1 of 8 START sql table model dbt_schema.customer ............................... [RUN]
+[2024-07-10T04:05:31.219+0000] {docker.py:436} INFO - [0m04:05:31  1 of 8 OK created sql table model dbt_schema.customer .......................... [[32mSUCCESS 1[0m in 1.85s]
+[2024-07-10T04:05:31.220+0000] {docker.py:436} INFO - [0m04:05:31  2 of 8 START sql table model dbt_schema.lineitem ............................... [RUN]
+[2024-07-10T04:05:40.845+0000] {docker.py:436} INFO - [0m04:05:40  2 of 8 OK created sql table model dbt_schema.lineitem .......................... [[32mSUCCESS 1[0m in 9.62s]
+[2024-07-10T04:05:40.846+0000] {docker.py:436} INFO - [0m04:05:40  3 of 8 START sql table model dbt_schema.nation ................................. [RUN]
+[2024-07-10T04:05:41.906+0000] {docker.py:436} INFO - [0m04:05:41  3 of 8 OK created sql table model dbt_schema.nation ............................ [[32mSUCCESS 1[0m in 1.05s]
+[2024-07-10T04:05:41.911+0000] {docker.py:436} INFO - [0m04:05:41  4 of 8 START sql table model dbt_schema.orders ................................. [RUN]
+[2024-07-10T04:05:44.871+0000] {docker.py:436} INFO - [0m04:05:44  4 of 8 OK created sql table model dbt_schema.orders ............................ [[32mSUCCESS 1[0m in 2.96s]
+[2024-07-10T04:05:44.872+0000] {docker.py:436} INFO - [0m04:05:44  5 of 8 START sql table model dbt_schema.part ................................... [RUN]
+[2024-07-10T04:05:46.471+0000] {docker.py:436} INFO - [0m04:05:46  5 of 8 OK created sql table model dbt_schema.part .............................. [[32mSUCCESS 1[0m in 1.59s]
+[2024-07-10T04:05:46.476+0000] {docker.py:436} INFO - [0m04:05:46  6 of 8 START sql table model dbt_schema.partsupp ............................... [RUN]
+[2024-07-10T04:05:48.577+0000] {docker.py:436} INFO - [0m04:05:48  6 of 8 OK created sql table model dbt_schema.partsupp .......................... [[32mSUCCESS 1[0m in 2.10s]
+[2024-07-10T04:05:48.578+0000] {docker.py:436} INFO - [0m04:05:48  7 of 8 START sql table model dbt_schema.region ................................. [RUN]
+[2024-07-10T04:05:49.596+0000] {docker.py:436} INFO - [0m04:05:49  7 of 8 OK created sql table model dbt_schema.region ............................ [[32mSUCCESS 1[0m in 1.02s]
+[2024-07-10T04:05:49.598+0000] {docker.py:436} INFO - [0m04:05:49  8 of 8 START sql table model dbt_schema.supplier ............................... [RUN]
+[2024-07-10T04:05:50.635+0000] {docker.py:436} INFO - [0m04:05:50  8 of 8 OK created sql table model dbt_schema.supplier .......................... [[32mSUCCESS 1[0m in 1.04s]
+[2024-07-10T04:05:50.638+0000] {docker.py:436} INFO - [0m04:05:50  
+[0m04:05:50  Finished running 8 table models in 0 hours 0 minutes and 22.39 seconds (22.39s).
+[2024-07-10T04:05:50.663+0000] {docker.py:436} INFO - [0m04:05:50
+[2024-07-10T04:05:50.664+0000] {docker.py:436} INFO - [0m04:05:50  [32mCompleted successfully[0m
+[2024-07-10T04:05:50.664+0000] {docker.py:436} INFO - [0m04:05:50
+[2024-07-10T04:05:50.664+0000] {docker.py:436} INFO - [0m04:05:50  Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+[2024-07-10T04:05:52.282+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-10T04:05:52.353+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=etl_pipeline, task_id=dbt_run_with_snowflake, run_id=manual__2024-07-10T04:05:24.228173+00:00, execution_date=20240710T040524, start_date=20240710T040525, end_date=20240710T040552
+[2024-07-10T04:05:52.384+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-10T04:05:52.403+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-10T04:05:52.409+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

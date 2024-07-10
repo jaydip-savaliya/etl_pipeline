@@ -1,0 +1,55 @@
+[0m11:29:10.624215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7637e57911c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7637e5755820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7637e58f2db0>]}
+
+
+============================== 11:29:10.627568 | e2f311fc-016d-41d4-832c-f2415579046f ==============================
+[0m11:29:10.627568 [info ] [MainThread]: Running with dbt=1.8.3
+[0m11:29:10.628042 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/mihir/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:29:10.634281 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/mihir/.dbt')}
+[0m11:29:10.634693 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m11:29:18.224076 [debug] [MainThread]: Starter project path: /home/mihir/Downloads/ETL Pipeline/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m11:29:18.234107 [info ] [MainThread]: 
+Your new dbt project "etl_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:29:18.235874 [info ] [MainThread]: Setting up your profile.
+[0m11:38:40.797392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768a5918de80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768a59296ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768a61f26540>]}
+
+
+============================== 11:38:40.809914 | 49f74c5c-f290-49a1-a6bc-ac7228dbf0a8 ==============================
+[0m11:38:40.809914 [info ] [MainThread]: Running with dbt=1.8.3
+[0m11:38:40.810388 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/mihir/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:38:46.785749 [debug] [MainThread]: Starter project path: /home/mihir/Downloads/ETL Pipeline/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m11:38:46.798256 [info ] [MainThread]: 
+Your new dbt project "etl_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:38:46.800017 [info ] [MainThread]: Setting up your profile.
+[0m11:41:16.707460 [info ] [MainThread]: Profile etl_pipeline written to /home/mihir/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:41:16.711456 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 155.9534, "process_user_time": 2.660781, "process_kernel_time": 0.350101, "process_mem_max_rss": "155892", "process_in_blocks": "142200", "process_out_blocks": "88"}
+[0m11:41:16.712094 [debug] [MainThread]: Command `dbt init` succeeded at 11:41:16.711978 after 155.95 seconds
+[0m11:41:16.712494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768a5b581af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768a563a9670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768a56cfda30>]}
+[0m11:41:16.712904 [debug] [MainThread]: Flushing usage events
